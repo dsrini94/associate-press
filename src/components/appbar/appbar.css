@@ -1,0 +1,18 @@
+.appbar {
+  background-color: #cc1224 !important;
+}
+
+.appbarLogo {
+  height: 50px;
+}
+
+.appbarBrandName {
+  color:#fff !important;
+  letter-spacing: 3px;
+  font-size: 25px;
+  margin-left: -15px !important;
+}
+
+.dropdown {
+    margin-left: -52px !important;
+}

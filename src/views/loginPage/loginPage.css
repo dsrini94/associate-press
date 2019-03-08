@@ -1,0 +1,105 @@
+.loginInnerContainer {
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.loginCoverImage {
+  height:500px;
+  width:100%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  opacity: 0.3;
+}
+
+.imageContainer {
+  background-color: #cc1224;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.imageText {
+  z-index: 1;
+  position: absolute;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  left:55%;
+  font-size: 50px;
+  top:41%;
+  font-weight: 500;
+}
+
+.logo {
+  z-index: 1;
+  position: absolute;
+  left:64%;
+  top:33%;
+  height:80px;
+}
+
+.smallText {
+  text-align: center;
+  padding-top: 40px;
+  letter-spacing: 5px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.brandName {
+  font-family: 'Nunito', sans-serif;
+  color:#cc1224;
+  display: inline;
+  letter-spacing: 5px;
+  margin-left: 20px;
+}
+
+.logoRed {
+  display: inline;
+  float: left;
+  margin-left: 45px;
+}
+
+.tagLine {
+  font-family: 'Nunito', sans-serif;
+  color:#a09a9b;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.formContainer {
+  text-align: center;
+}
+
+.input {
+  margin:10px;
+  width:250px;
+  border-radius: 10px !important;
+}
+
+.loginButton {
+  background-color: #cc1224 !important;
+  border-radius: 10px !important;
+  width:250px;
+  color: #fff !important;
+}
+
+.signUpContainer {
+  text-align: center;
+}
+
+.signUpContainer p {
+  display: inline;
+  color:#cc1224;
+  cursor: pointer;
+}
+.beforeSignUp {
+  color:#000 !important;
+  margin-right: 10px;
+}

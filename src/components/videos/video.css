@@ -1,0 +1,33 @@
+.YouTubeHeader {
+  margin-top: 20px !important;
+  text-align: center;
+  background-color:#cc1224 ;
+  color:#fff;
+  margin:20px !important;
+  padding:10px !important;
+}
+
+.itemDiv {
+  margin:20px;
+}
+
+.videoTileSegment {
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top:330px;
+  padding:10px;
+}
+
+.vidTitle {
+  margin-top:5px !important;
+}
+
+.vidDesc {
+  margin-top: -10px !important;
+  font-size: 12px;
+  font-weight: 500 !important;
+}
+
+.heroText {
+  font-weight: 500 !important;
+}
