@@ -1,5 +1,15 @@
 .appbar {
   background-color: #cc1224 !important;
+  margin-bottom: 0% !important;
+}
+.appbarForLinks{
+  margin-top: 0% !important;
+  background-color: #cc1224 !important;
+
+}
+.appBarLinkText{
+  color:#fff !important;
+  text-decoration: underline !important;
 }
 
 .appbarLogo {
@@ -11,6 +21,12 @@
   letter-spacing: 3px;
   font-size: 25px;
   margin-left: -15px !important;
+}
+.appbarUserName {
+  color:#fff !important;
+  font-size: 20px;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
 }
 
 .dropdown {

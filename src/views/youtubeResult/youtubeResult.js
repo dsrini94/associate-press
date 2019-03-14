@@ -2,22 +2,23 @@ import React, { Component } from 'react';
 
 import { Grid, Header, Item, Image, Input, Icon, List, Button, Segment, Divider, Feed, Tab, Menu } from 'semantic-ui-react';
 
+import AppBar from './../../components/appbar/appbar.js'
 import YouTube from 'react-youtube';
 import TagsInput from 'react-tagsinput';
 import 'react-tagsinput/react-tagsinput.css';
 import { Link } from "react-router-dom";
 
 
-import TwitterFeed from '../twitterFeed/twitterFeed.js';
+import TwitterFeed from '../../components/twitterFeed/twitterFeed.js';
 
-import FacebookContent from '../searchedContent/facebookContent.js';
-import InstagramContent from '../searchedContent/instagramContent.js';
-import TwitterContent from '../searchedContent/twitterContent.js';
-import YoutubeContent from '../searchedContent/youtubeContent.js';
+import FacebookContent from '../../components/searchedContent/facebookContent.js';
+import InstagramContent from '../../components/searchedContent/instagramContent.js';
+import TwitterContent from '../../components/searchedContent/twitterContent.js';
+import YoutubeContent from '../../components/searchedContent/youtubeContent.js';
 
-import AdvancedSearchContent from '../advancedSearchContent/advancedSearchContent.js';
+import AdvancedSearchContent from '../../components/advancedSearchContent/advancedSearchContent.js';
 
-import './video.css';
+import './youtubeResult.css';
 
 const data = [
   {
@@ -261,9 +262,9 @@ export default class Video extends Component {
     <Grid.Row>
       <Grid.Column width={15} style={{textAlign:'right'}}>
         <Button.Group>
-          <Button primary>Search</Button>
+          <Button primary as={Link} to='/search'>Search</Button>
           <Button.Or />
-          <Button primary>Advanced Search</Button>
+          <Button primary as={Link} to='/advancedSearch'>Advanced Search</Button>
         </Button.Group>
       </Grid.Column>
       <Grid.Column width={1} />
@@ -322,6 +323,7 @@ export default class Video extends Component {
   );
     return(
       <div>
+        <AppBar handleEnter={this.handleEnter}/>
         <Grid padded>
           <Grid.Row>
             <Grid.Column width={3}/>
@@ -334,10 +336,8 @@ export default class Video extends Component {
           </Grid.Row>
           <Grid.Row>
             <Grid.Column width={10}>
-              {list}
-              {/* {youtubeData} */}
-              {/* {searchData} */}
-              {/* {advancedSearchData} */}
+              {youtubeData}
+
             </Grid.Column>
 
             <Grid.Column width={6} >

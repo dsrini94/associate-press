@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import './appbar.css'
 
-import logo from './infinity.png'
+import logo from './AP_press_logo.png'
 
 export default class AppBar extends Component {
 
@@ -33,16 +33,20 @@ export default class AppBar extends Component {
       <div >
       <Menu secondary size="large" className="appbar">
        <Menu.Item></Menu.Item>
-       <Menu.Item><Image src={logo} className="appbarLogo"/></Menu.Item>
-       <Menu.Item name='Associate Press' active={this.state.activeItem === 'home'} onClick={this.handleItemClick} className="appbarBrandName"/>
+
+       <Menu.Item as={Link} to='/home' style={{top:'18px'}}>
+         <Image src={logo} className="appbarLogo"/>
+       </Menu.Item>
+       <Menu.Item  as={Link} to='/home' style={{top:'16px'}} name='Verify' active={this.state.activeItem === 'home'} onClick={this.handleItemClick} className="appbarBrandName"/>
+
 
        <Menu.Menu position='right'>
-         <Menu.Item>
+         {/* <Menu.Item>
            <Input icon='search' placeholder='Search...' onKeyDown={this.handleSearch}/>
-         </Menu.Item>
+         </Menu.Item> */}
 
 
-
+         <Menu.Item name='Hi Tom' className="appbarUserName" />
          <Menu.Item>
            <img src="https://cdn2.iconfinder.com/data/icons/flaturici-set-4/512/user-512.png" />
          </Menu.Item>
@@ -56,11 +60,22 @@ export default class AppBar extends Component {
           <Menu.Item>
           </Menu.Item>
 
-          <Menu.Item>
+          {/* <Menu.Item>
           </Menu.Item>
 
           <Menu.Item>
-          </Menu.Item>
+          </Menu.Item> */}
+       </Menu.Menu>
+     </Menu>
+     <Menu secondary size="small" className="appbarForLinks">
+       <Menu.Menu position='right'>
+         <Menu.Item name='Images' className="appBarLinkText"/>
+         <Menu.Item name='Videos' className="appBarLinkText"/>
+         <Menu.Item name='Link 3' className="appBarLinkText"/>
+         <Menu.Item name='Link 4' className="appBarLinkText"/>
+         <Menu.Item />
+         {/* <Menu.Item />
+         <Menu.Item /> */}
        </Menu.Menu>
      </Menu>
       </div>
